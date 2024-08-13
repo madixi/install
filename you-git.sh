@@ -17,7 +17,7 @@ git pull
 cp you_git.py ../1you-git/
 cd
 
-if [ ! -f "/etc/apt/keyrings/yandex-disk.gpg" ]; then
+if [ ! dpkg -l yandex-disk > /dev/null 2>&1 ]; then
     sudo apt-get install wget gpg
     wget -qO- http://repo.yandex.ru/yandex-disk/YANDEX-DISK-KEY.GPG | gpg --dearmor > yandex-disk.gpg
     sudo install -D -o root -g root -m 644 yandex-disk.gpg /etc/apt/keyrings/yandex-disk.gpg
