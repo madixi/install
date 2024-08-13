@@ -11,6 +11,6 @@ git config --global user.name >/dev/null || git config --global user.email ${use
 mkdir -p 1you-git
 [ -d "you-git" ] || git clone git@github.com:madixi/you-git.git
 cd you-git
-git clone
+git pull
 cp you-git/you-git.py ../1you-git
 cd
