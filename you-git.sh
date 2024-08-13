@@ -12,5 +12,5 @@ git config --global user.name >/dev/null || git config --global user.email ${use
 
 mkdir -p 1you-git
 cd 1you-git
-cp ../you-git/you-git.py
+cp ../you-git/you-git.py ./
 cd
