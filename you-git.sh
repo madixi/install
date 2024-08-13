@@ -12,5 +12,5 @@ mkdir -p 1you-git
 [ -d "you-git" ] || git clone git@github.com:madixi/you-git.git
 cd you-git
 git pull
-cp you-git.py ../1you-git/
+cp you_git.py ../1you-git/
 cd
