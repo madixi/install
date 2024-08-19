@@ -25,7 +25,7 @@ dpkg -l yandex-disk > /dev/null 2>&1 || (
 
 pip3 install --user -U ffmpeg-python
 
-mkdir -p 1you-git
+mkdir -p 1you-git/yandex-disk
 
 [ -d "you-git" ] || git clone git@github.com:madixi/you-git.git
 cd you-git
